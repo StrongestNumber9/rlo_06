@@ -5,7 +5,7 @@
   <packaging>jar</packaging>
   <modelVersion>4.0.0</modelVersion>
   <artifactId>rlo_06</artifactId>
-  <version>${git.commit.id.describe}</version>
+  <version>${teragrep.rlo_06.version}</version>
   <name>rlo_06</name>
   <description>Syslog (RFC 5424) library for Java</description>
   <groupId>com.teragrep</groupId>
@@ -21,6 +21,7 @@
     <publish.stagingRepositoryId>releases</publish.stagingRepositoryId>
     <repository.id>releases</repository.id>
     <repository.url>http://localhost/repository/releases/</repository.url>
+    <teragrep.rlo_06.version>0.0.1-SNAPSHOT</teragrep.rlo_06.version>
   </properties>
   <licenses>
     <license>
@@ -83,39 +84,6 @@
     <directory>${project.basedir}/target</directory>
     <finalName>rlo_06</finalName>
     <plugins>
-      <plugin>
-        <groupId>pl.project13.maven</groupId>
-        <artifactId>git-commit-id-plugin</artifactId>
-        <version>4.9.10</version>
-        <executions>
-          <execution>
-            <id>get-the-git-infos</id>
-            <phase>process-resources</phase>
-            <goals>
-              <goal>revision</goal>
-            </goals>
-          </execution>
-          <execution>
-            <id>validate-the-git-infos</id>
-            <goals>
-              <goal>validateRevision</goal>
-            </goals>
-            <phase>package</phase>
-          </execution>
-        </executions>
-        <configuration>
-          <injectAllReactorProjects>true</injectAllReactorProjects>
-          <dotGitDirectory>${project.basedir}/.git</dotGitDirectory>
-          <prefix>git</prefix>
-          <verbose>true</verbose>
-          <gitDescribe>
-            <tags>true</tags>
-            <skip>false</skip>
-            <always>true</always>
-            <dirty>-dirty</dirty>
-          </gitDescribe>
-        </configuration>
-      </plugin>
       <plugin>
         <groupId>org.apache.rat</groupId>
         <artifactId>apache-rat-plugin</artifactId>
