@@ -38,9 +38,9 @@
     </developer>
   </developers>
   <scm>
-    <connection>scm:git:https://github.com/StrongestNumber9/rlo_06.git</connection>
-    <developerConnection>scm:git:git@github.com:StrongestNumber9/rlo_06.git</developerConnection>
-    <url>https://github.com/StrongestNumber9/rlo_06/tree/master</url>
+    <connection>scm:git:https://github.com/teragrep/rlo_06.git</connection>
+    <developerConnection>scm:git:git@github.com:teragrep/rlo_06.git</developerConnection>
+    <url>https://github.com/teragrep/rlo_06/tree/master</url>
   </scm>
   <dependencies>
     <!-- /// just for timestamp parsing \\\ -->
@@ -289,7 +289,7 @@
         <repository>
           <id>github</id>
           <name>GitHub Packages</name>
-          <url>https://maven.pkg.github.com/StrongestNumber9/rlo_06</url>
+          <url>https://maven.pkg.github.com/teragrep/rlo_06</url>
         </repository>
       </distributionManagement>
     </profile>
